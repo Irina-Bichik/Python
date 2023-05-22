@@ -53,16 +53,51 @@
 # Пользователь вводит число N – общее количество рассматриваемых дней (1 ≤ N ≤ 100). 
 # В следующих строках располагается N целых чисел. Каждое число – среднесуточная температура в соответствующий день. 
 
-n = int(input("Ввдеите кол-во дней: "))
-count = 0
-max_days_count = 0
-for i in range(n):
-    x = int(input("Введите температуру сегодня: "))
-    if x > 0:
-        count += 1
-    else:
-        count = 0
+# n = int(input("Ввдеите кол-во дней: "))
+# count = 0
+# max_days_count = 0
+# for i in range(n):
+#     x = int(input("Введите температуру сегодня: "))
+#     if x > 0:
+#         count += 1
+#     else:
+#         count = 0
     
-    if max_days_count < count:
-        max_days_count = count
-print(max_days_count)
+#     if max_days_count < count:
+#         max_days_count = count
+# print(max_days_count)
+
+
+# # Variant 2
+# n = int(input("Ввдеите кол-во дней: "))
+# count = 0
+# max_days_count = 0
+# # -10 30 -40 50 10 -20
+# for i in range(n):
+#     x = int(input("Введите температуру сегодня: "))
+#     if x > 0:
+#         count += 1
+#     else:
+#         if max_days_count < count:
+#             max_days_count = count
+#         count = 0
+# print(max_days_count)
+
+# Пользователь вводит одно число N – количество арбузов. Вторая строка содержит N чисел, записанных на новой строчке каждое. 
+# Здесь каждое число – это масса соответствующего арбуза. Выбрать самый легкий и самый тяжелый арбуз
+
+n = int(input("Введите кол-во арбузов: "))
+# a = [43, 13, 0, -10, 35, 89]
+# 1 <= m <= 1000
+max_massa = 0
+min_massa = 1001
+for i in range(n):
+    x = int(input("Введите массу арбуза: "))
+    if x > max_massa:
+        max_massa = x
+
+    if x < min_massa:
+        min_massa = x
+print(min_massa, max_massa)
+
+
