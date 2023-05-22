@@ -32,19 +32,37 @@
 
 
 
-# for (int i = 0; i <= 10; i++)
+# # for (int i = 0; i <= 10; i++)
 
-for i in 1, True, "Hello", 4.57:
-    print(i)
+# for i in 1, True, "Hello", 4.57:
+#     print(i)
 
-# range()
-print(list(range(5)))
-for i in [0, 1, 2, 3, 4]:
-    print(i)
+# # range()
+# print(list(range(5)))
+# for i in [0, 1, 2, 3, 4]:
+#     print(i)
 
-begin = 10
-end = 0
-step = -1
-print(list(range(begin, end, step)))
-print(list(range(5))) # begin = 0           step = +1
-print(list(range(10, 20)))
+# begin = 10
+# end = 0
+# step = -1
+# print(list(range(begin, end, step)))
+# print(list(range(5))) # begin = 0           step = +1
+# print(list(range(10, 20)))
+
+# сколько дней длилась самая длинная оттепель
+# Пользователь вводит число N – общее количество рассматриваемых дней (1 ≤ N ≤ 100). 
+# В следующих строках располагается N целых чисел. Каждое число – среднесуточная температура в соответствующий день. 
+
+n = int(input("Ввдеите кол-во дней: "))
+count = 0
+max_days_count = 0
+for i in range(n):
+    x = int(input("Введите температуру сегодня: "))
+    if x > 0:
+        count += 1
+    else:
+        count = 0
+    
+    if max_days_count < count:
+        max_days_count = count
+print(max_days_count)
