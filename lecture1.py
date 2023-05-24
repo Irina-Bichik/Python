@@ -229,15 +229,3 @@ print(text[0:len(text):6])                      # сеикакл
 # или
 print(text[::6])                                # сеикакл
 text = text[2:9] + text[-5] + text[:2] 
-
-   
-    
-
-
-
-
-
-
-
-
-
