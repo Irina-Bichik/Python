@@ -86,31 +86,21 @@ for item in data:
         result.add(item[key])
 print(result)
 
-
 # Дан массив, состоящий из целых чисел. Напишите программу, которая подсчитает количество элементов массива, больших предыдущего (элемента с предыдущим номером) 
 # Input: [0, -1, 5, 2, 3]
 # Output: 2 
 # Пояснение: (-1 < 5, 2 < 3)
 
-# data = [int(i) for i in input("Введите числа: ").split()]
-# count = 0
-# for i in range(len(data) - 1):
-#     if data[i + 1] > data[i]:
-#         count += 1
-# print(count)
+data = [int(i) for i in input("Введите числа: ").split()]
+count = 0
+for i in range(len(data) - 1):
+    if data[i + 1] > data[i]:
+        count += 1
+print(count)
 
-
-
-
-# data = [int(i) for i in input("Введите числа: ").split()]
-# count = 0
-# for i in range(len(data) - 1):
-#     if data[i + 1] > data[i]:
-#         count += 1
-# print(count)
-# n = 10
-# print(int(n > 5))
+n = 10
+print(int(n > 5))
 # True - 1
 # False - 0
-# data = [int(i) for i in input("Введите числа: ").split()]
-# print(sum([int(data[i + 1] > data[i]) for i in range(len(data) - 1)]))
+data = [int(i) for i in input("Введите числа: ").split()]
+print(sum([int(data[i + 1] > data[i]) for i in range(len(data) - 1)]))
