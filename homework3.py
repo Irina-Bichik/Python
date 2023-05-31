@@ -7,18 +7,18 @@
 #     3
 #     -> 1
 
-# n = int(input('Input the number of elements in the array: '))
-# arr = [int (i) for i in input ('Input array elements: ').split()]
-# if len(arr) == n:
-#    x = int (input('Input the element (X) you want to count: '))
-#    count = 0
-#    for i in range (n):
-#      if arr[i] == x:
-#          count +=1
-# else:
-#     print('More than N elements of the array')
+n = int(input('Input the number of elements in the array: '))
+arr = [int (i) for i in input ('Input array elements: ').split()]
+if len(arr) == n:
+   x = int (input('Input the element (X) you want to count: '))
+   count = 0
+   for i in range (n):
+     if arr[i] == x:
+         count +=1
+else:
+    print('More than N elements of the array')
 
-# print(f'Element {x} repeats in the array {count} times')
+print(f'Element {x} repeats in the array {count} times')
 
 # Задача 18: Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X. 
 # Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
@@ -35,13 +35,13 @@
 #     arr.append(int(input(f'Input the {i+1} element of the array ')))
 # x = int(input('Set the X element '))
 
-# m = abs(x - arr[0])
-# num = arr[0]
-# for i in range(1, len(arr)):
-#     if m > abs(x - arr[i]):
-#         m = abs(arr[i] - x)
-#         num = arr[i]
-# print(f'The closest element to the number {x} is {num}')
+m = abs(x - arr[0])
+num = arr[0]
+for i in range(1, len(arr)):
+    if m > abs(x - arr[i]):
+        m = abs(arr[i] - x)
+        num = arr[i]
+print(f'The closest element to the number {x} is {num}')
 
 # *Задача 20: * В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность. 
 # В случае с английским алфавитом очки распределяются так:
