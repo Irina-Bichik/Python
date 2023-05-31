@@ -4,17 +4,17 @@ print(data)
 data = [int(i) for i in input("Введите числа: ").split()]
 print(data)
 
-# list_1 = [1, -1.575, 'Hello, world!', True]
-# list
-# # array (import array || import numpy)
-# t = (1, 2)
-# # t [0] += 1
-# # tuple 
-# # dict
-# # set
-# set_1 = {1, 2, 3, 4}
-# set_1.add(56)
-# print(*set_1)
+list_1 = [1, -1.575, 'Hello, world!', True]
+list
+# array (import array || import numpy)
+t = (1, 2)
+t [0] += 1
+# tuple 
+# dict
+# set
+set_1 = {1, 2, 3, 4}
+set_1.add(56)
+print(*set_1)
 
 # list() - set() - tuple()
 
@@ -22,19 +22,19 @@ print(data)
 # Input: [1, 1, 2, 0, -1, 3, 4, 4]
 # Output: 6
 
-# data = [int(i) for i in input("Введите числа: ").split()]
-# print(len(set(data)))
+data = [int(i) for i in input("Введите числа: ").split()]
+print(len(set(data)))
 
 # Дана последовательность из N целых чисел и число K. Необходимо сдвинуть всю последовательность 
 # (сдвиг - циклический) на K элементов вправо,  K – положительное число.
 # Input:   [1, 2, 3, 4, 5] k = 3
 # Output:  [3, 4, 5, 1, 2]
 
-# data = [int(i) for i in input("Введите числа: ").split()]
-# steps = int(input("Введите кол-во сдвигов: "))
-# steps = steps % len(data)
-# data = [data[i - steps] for i in range(len(data))]
-# print(data)
+data = [int(i) for i in input("Введите числа: ").split()]
+steps = int(input("Введите кол-во сдвигов: "))
+steps = steps % len(data)
+data = [data[i - steps] for i in range(len(data))]
+print(data)
 
 # i = 0: data[0 - 3]
 # i = 1: data[1 - 3]
