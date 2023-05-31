@@ -20,23 +20,22 @@ print(*s_set)
 # Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль, 
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
-# import random
-# kust = int(input("Input the number of bushes: "))
-# berryes = list(random.randint(0, 10) for i in range(kust))
-# result = []
-# i = 0
-# sum = 0
+import random
+kust = int(input("Input the number of bushes: "))
+berryes = list(random.randint(0, 10) for i in range(kust))
+result = []
+i = 0
+sum = 0
 
-# print(berryes)
+print(berryes)
 
-# while (i < kust):
-#     if (i == kust - 1):
-#         sum = berryes[i] + berryes[i - 1] + berryes[0]
-#     else:
-#         sum = berryes[i] + berryes[i - 1] + berryes[i + 1]
-#         result.append(sum)
-#         result.sort()
-#     i += 1
+while (i < kust):
+    if (i == kust - 1):
+        sum = berryes[i] + berryes[i - 1] + berryes[0]
+    else:
+        sum = berryes[i] + berryes[i - 1] + berryes[i + 1]
+        result.append(sum)
+        result.sort()
+    i += 1
 
-# print(f"Maximum number of berries in one go is {result[-1]}")
-
+print(f"Maximum number of berries in one go is {result[-1]}")
