@@ -1,5 +1,4 @@
-data = [int(i) for i in input("Введите числа: ").split()]
-print(data)
+# Lists and Dictionaries
 
 data = [int(i) for i in input("Введите числа: ").split()]
 print(data)
