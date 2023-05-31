@@ -43,19 +43,19 @@ print(data)
 # i = 4: data[4 - 3]
 
 # [10, 20, 30, 40, 50]
-#  -5  -4  -3  -2  -1
+# -5  -4  -3  -2  -1
 # steps = 3
 # [30, 40, 50, 10, 20]
 #  -3  -2  -1  -5  -4
 #  0   1   2   3   4
 
-# data = [[1, -1.575], ['Hello, world', True], [15, -7]]
+data = [[1, -1.575], ['Hello, world', True], [15, -7]]
 # # #           0                  1                 2
-# print(data[2][0])
+print(data[2][0])
 
-# data = {"Ivan": 27, 'Alexandr': 36, 'Konstantin': {'age': 21, 'hobby': ['tennis', 'fotball']}}
+data = {"Ivan": 27, 'Alexandr': 36, 'Konstantin': {'age': 21, 'hobby': ['tennis', 'fotball']}}
 # # key: value
-# print(data['Konstantin']['hobby'][0])
+print(data['Konstantin']['hobby'][0])
 
 
 
