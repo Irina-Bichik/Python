@@ -30,7 +30,6 @@ for X in range(S):
         if S == X + Y and P == X * Y:
             print(f'The first number is "{X}", the second number is "{Y}"')
 
-
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 
 N = int(input('Input the number N: '))
@@ -38,5 +37,3 @@ k=1
 while k<=N:
     print(k,end=' ')
     k=2*k
-
-
