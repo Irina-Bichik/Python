@@ -33,10 +33,10 @@ for X in range(S):
 
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 
-# N = int(input('Input the number N: '))
-# k=1
-# while k<=N:
-#     print(k,end=' ')
-#     k=2*k
+N = int(input('Input the number N: '))
+k=1
+while k<=N:
+    print(k,end=' ')
+    k=2*k
 
 
